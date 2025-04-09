@@ -1,0 +1,25 @@
+{
+    "name": "zh-hayes/comm-func",
+    "description": "common functions",
+    "type": "library",
+    "license": "Apache-2.0",
+	"homepage": "https://github.com/Hayes-Z/comm-func.git",
+    "authors": [{
+        "name": "zh-hayes",
+        "email": "944631794@qq.com"
+    }],
+    "require": {
+        "php": ">=7.1",
+        "ext-mbstring": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-pdo": "*"
+	},
+    "autoload": {
+        "files": [
+            "src/string_func.php"
+        ],
+        "psr-4": {
+        }
+    }
+}
