@@ -25,11 +25,10 @@ function randomString($length,$rules=['LC','UC','NUM']){
     $characters = implode('',$charactersArr);
     $charLength = strlen($characters);
 
-    $bytes = random_bytes($length);
     $returnString = '';
     for ($i = 0; $i < $length; ++$i) {
         // 直接映射 0-255 到 字符
-        $returnString .= $characters[ord($bytes[$i]) & $charLength];
+        $returnString .= $characters[mt_rand(0,$charLength)];
     }
     return $returnString;
 }
