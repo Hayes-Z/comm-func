@@ -28,7 +28,7 @@ function randomString($length,$rules=['LC','UC','NUM']){
     $returnString = '';
     for ($i = 0; $i < $length; ++$i) {
         // 直接映射 0-255 到 字符
-        $returnString .= $characters[mt_rand(0,$charLength)];
+        $returnString .= $characters[mt_rand(0,$charLength-1)];
     }
     return $returnString;
 }
